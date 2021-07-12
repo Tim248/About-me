@@ -8,15 +8,14 @@
   margin: 0 auto;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header {
-  height: 700px;
-  background: url(../images/header_bg.png);
+.header {
+  background: url(../images/header_bg.png) no-repeat center /cover;
 }
 
 a {
@@ -25,21 +24,27 @@ a {
 
 .logo {
   color: white;
-  font-size: 40px;
+  font-size: 25px;
   text-transform: uppercase;
-  background: black;
+  background: #000000b9;
   padding: 10px;
 }
 
-.type {
-  color: white;
-  font-size: 30px;
-  transition: 500ms;
+.logo:hover {
+  color: white !important;
 }
 
-.type:hover {
-  color: black;
-  background: white;
+.header__link {
+  color: white;
+  font-size: 25px;
+  background: #000000b9;
+  transition: background 300ms color 300ms;
+  padding: 10px;
+}
+
+.header__link:hover {
+  color: white;
+  background: #4a3061;
 }
 
 .header__box {
@@ -49,7 +54,7 @@ a {
   margin-top: 100px;
 }
 
-h1 {
+.header__title {
   color: white;
   text-transform: uppercase;
   font-family: Arial;
@@ -61,26 +66,62 @@ h1 {
   color: white;
   padding: 10px 70px;
   font-size: 24px;
-  transition: 500ms;
+  transition: background 500ms, color 500ms;
+  text-transform: uppercase;
+  margin-bottom: 10%;
 }
 
 .button:hover {
-  background: purple;
-  color: white;
+  background: #4a3061;
+  color: black;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #0000006b;
 }
 
-main {
+.about__text {
+  color: white;
+  font-size: 22px;
+  width: 60%;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 30px;
+}
+
+.main {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-h2 {
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__content-progress {
+  width: 60%;
+}
+
+.progress {
+  margin-bottom: 15px;
+}
+
+.progress:last-of-type {
+  margin-bottom: 0;
+}
+
+.main__progress-text:first-of-type {
+  color: white;
+  font-weight: bold;
+}
+
+.all-titles {
   font-size: 30px;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -88,26 +129,26 @@ h2 {
   margin-top: 30px;
 }
 
-.about p {
-  text-align: center;
-  font-size: 22px;
-  font-family: arial;
-  margin-bottom: 30px;
+.progress__icon {
+  font-size: 30px;
 }
 
 .item {
-  width: 350px;
-  border: 2px solid black;
+  max-width: 350px;
+  width: 100%;
+  border: 5px solid black;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
   transition: 500ms;
 }
 
 .item:hover {
-  border: 2px solid purple;
+  border: 5px solid #4a3061;
 }
 
 .item__title {
@@ -117,17 +158,6 @@ h2 {
   margin: 15px 0;
 }
 
-.item img {
-  width: 100%;
-}
-
-.item p {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  margin: 20px 0;
-}
-
 .item__link {
   background: black;
   color: white;
@@ -135,18 +165,13 @@ h2 {
   text-transform: uppercase;
   padding: 10px 30px;
   border-radius: 5px;
-  transition: 500ms;
-
+  transition: background 300ms color 300ms;
 }
 
 .item__link:hover {
-  background: blue;
-  color: white;
-
+  background: #4a3061;
+  color: black;
 }
-
-
-
 
 .box {
   display: flex;
@@ -154,8 +179,7 @@ h2 {
   justify-content: space-between;
 }
 
-
-footer {
+.footer {
   background: black;
   display: flex;
   flex-direction: column;
@@ -164,7 +188,14 @@ footer {
   padding-bottom: 40px;
 }
 
-footer a {
+.footer__icon {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.footer__text {
   color: white;
   font-size: 24px;
   text-transform: uppercase;
@@ -172,7 +203,60 @@ footer a {
 }
 
 .footer__block-icon {
-  color: red;
-  background: white;
-  
+  color: white;
+  font-size: 30px;
+}
+
+.footer__icon:nth-of-type(2) {
+  margin: 0 20px;
+
+}
+
+.item__img {
+  max-height: 240px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width:1000px) {
+  .box {
+    justify-content: center;
+  }
+}
+
+@media (max-width:780px) {
+  .header__title {
+    text-align: center;
+  }
+  .button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:600px) {
+  .nav {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .header__link {
+    font-size: 15px;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .button {
+    font-size: 15px;
+  }
+  .about__text {
+    font-size: 18px;
+  }
+  .progress {
+    font-size: 8px;
+    font-weight: 100;
+  }
 }

@@ -6,85 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <nav>
-                <a href="#!" class="logo">Timur</a>
-                <a href="https://t.me/t1m_99" class="type">Написать</a>
+            <nav class="nav">
+                <a href="#!" class="logo">Nematjonov Timur</a>
+                <a href="https://t.me/t1m_99" class="header__link">Написать</a>
             </nav>
             <div class="header__box">
-                <h1>Добро пожаловать на мой сайт</h1>
+                <h1 class="header__title">Добро пожаловать на мой сайт</h1>
                 <a href="tel:+998942440812" class="button">Позвонить мне</a>
             </div>
         </div>
+        <div class="about">
+            <h2 class="header__title">Обо мне</h2>
+            <p class="about__text">Я Junior-web разработчик и активно развиваюсь в своей сфере, активно пользуюсь
+                GitHub, Figma. Я
+                самостоятельно ищу все информации и в адекватные сроки усваиваю новые технологии и внекаю в новый
+                код. Мне 22 года, и в данный момент проживаю в Узбекистане, в городе Ташкент.</p>
+        </div>
     </header>
-    <main>
+    <main class="main">
         <div class="container">
-            <div class="about">
-                <h2>Обо мне</h2>
-                <p></p>
-                <a href="" class="button">скачать резюме</a>
-            </div>
-            <h2>Мои работы</h2>
-            <div class="box">
-                <div class="item">
-                    <h3 class="item__title">silver house</h3>
-                    <img src="images/nike.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam quia odit quis esse
-                        autem.</p>
-                    <a href="#" class="item__link">подробнее</a>
+            <div class="main__content">
+                <h2 class="main__progress-title all-titles">Мои знание</h2>
+                <div class="main__content-progress">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated main__progress-text"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 45%">HTML</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated main__progress-text"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 50%">CSS</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated main__progress-text"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 15%">JavaScript</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated main__progress-text"
+                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 40%">Bootstrap</div>
+                    </div>
                 </div>
-                <div class="item">
-                    <h3 class="item__title">silver house</h3>
-                    <img src="images/nike.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam quia odit quis esse
-                        autem.</p>
-                    <a href="#" class="item__link">подробнее</a>
-                </div>
-                <div class="item">
-                    <h3 class="item__title">silver house</h3>
-                    <img src="images/nike.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam quia odit quis esse
-                        autem.</p>
-                    <a href="#" class="item__link">подробнее</a>
-                </div>
-                <div class="item">
-                    <h3 class="item__title">silver house</h3>
-                    <img src="images/nike.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam quia odit quis esse
-                        autem.</p>
-                    <a href="#" class="item__link">подробнее</a>
-                </div>
-                <div class="item">
-                    <h3 class="item__title">silver house</h3>
-                    <img src="images/nike.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam quia odit quis esse
-                        autem.</p>
-                    <a href="#" class="item__link">подробнее</a>
-                </div>
-                <div class="item">
-                    <h3 class="item__title">silver house</h3>
-                    <img src="images/nike.png" alt="">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam quia odit quis esse
-                        autem.</p>
-                    <a href="#" class="item__link">подробнее</a>
+                <h2 class="all-titles">Мои работы</h2>
+                <div class="box">
+                    <div class="item">
+                        <h3 class="item__title">Vue Cinema</h3>
+                        <img src="images/Vue Cinemas.png" alt="" class="item__img">
+                        <a href="https://tim248.github.io/Vue-Cinema/" class="item__link">подробнее</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="item__title">Boulevard market</h3>
+                        <img src="images/Boulevard market.png" alt="" class="item__img">
+                        <a href="https://tim248.github.io/BoulevardMarket/" class="item__link">подробнее</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="item__title">Street-88</h3>
+                        <img src="images/Street88.png" alt="" class="item__img">
+                        <a href="https://tim248.github.io/Street-88/" class="item__link">подробнее</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="item__title">The News Web</h3>
+                        <img src="images/TNW.png" alt="" class="item__img">
+                        <a href="https://tim248.github.io/TNW/" class="item__link">подробнее</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="item__title">Nike</h3>
+                        <img src="images/nike.png" alt="" class="item__img">
+                        <a href="https://tim248.github.io/Nike/" class="item__link">подробнее</a>
+                    </div>
+                    <div class="item">
+                        <h3 class="item__title">Blue Marketing</h3>
+                        <img src="images/BlueMarketing.png" alt="" class="item__img">
+                        <a href="https://tim248.github.io/bm/" class="item__link">подробнее</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footer__block">
-            <i class="fab fa-instagram footer__block-icon"></i>
-            <i class="fab fa-telegram footer__block-icon"></i>
-            <i class="far fa-envelope footer__block-icon"></i>
+            <a href="https://www.instagram.com/t1m_99_/" class="footer__icon">
+                <i class="fab fa-instagram footer__block-icon"></i>
+            </a>
+            <a href="https://t.me/t1m_99" class="footer__icon">
+                <i class="fab fa-telegram footer__block-icon"></i>
+            </a>
+            <a href="mailto:tim_812work@inbox.ru" class="footer__icon">
+                <i class="far fa-envelope footer__block-icon"></i>
+            </a>
         </div>
-        <a href="https://www.instagram.com/cristiano/?hl=ru">This site powered by Zafar</a>
+        <a href="https://www.instagram.com/cristiano/?hl=ru" class="footer__text">This site powered by Timur</a>
     </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
