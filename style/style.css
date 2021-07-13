@@ -71,6 +71,7 @@ a {
   transition: background 500ms, color 500ms;
   text-transform: uppercase;
   margin-bottom: 10%;
+  text-align: center;
 }
 
 .button:hover {
